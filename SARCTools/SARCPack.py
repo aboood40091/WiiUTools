@@ -11,6 +11,7 @@ def calchash(name):
 
 class SimpleArchive(object):
     def pack(self, folder, padding):
+        padding = int(padding, 0)
         '''Generate string list for finding and writing'''
         filedata = [];lenfiles = 0;numfiles = 0;lennames = 0
         print("Generating file list....")
